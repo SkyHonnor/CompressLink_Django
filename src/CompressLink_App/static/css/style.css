@@ -1,0 +1,15 @@
+
+
+tr
+{
+    width: 400px;
+    height: 25px;
+}
+
+table 
+{
+    border: solid black 5px;
+    border-collapse: collapse;
+    border-radius: 12px;
+    padding: 5px;
+}
