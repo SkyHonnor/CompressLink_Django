@@ -1,26 +1,29 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CompressLink</title>
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
+
 <body>
     <h2>Compresser vos liens !</h2>
-    <table>
-        <tr>
-            <form method="post" action="{% url 'createlink' %}">
-                {% csrf_token %}
-        
-                <td>
-                    <input type="url" max="2083" name="urlredirection" id="urlredirection">
-                </td>
-                <td>
-                    <button type="submit">▶❘◀</button>
-                </td>
+    <div class="border-4 rounded border-black w-1/2">
+        <div class="w-full flex flex-row">
+        <form method="post" action="{% url 'createlink' %}">
+            {% csrf_token %}
 
-            </form>
-        </tr>
-    </table>
+
+            <input type="url" class="" max="2083" name="urlredirection" id="urlredirection">
+
+
+            <button type="submit">▶❘◀</button>
+
+
+        </form>
+    </div>
+    </div>
 </body>
+
 </html>

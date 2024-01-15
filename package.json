@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/CompressLink_App//static/css/main.css -o ./src/CompressLink_App/static/css/style.css --watch"
+  }
+}
